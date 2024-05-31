@@ -1,0 +1,16 @@
+<nav *ngIf="isLoggedIn" class=".app-menu">
+  <ul>
+    <li>
+      <a routerLink="/dashboard">
+        <i class="fas fa-chart-line"></i>
+        <span class="nav-item-text">Kokpit</span>
+      </a>
+    </li>
+    <li>
+      <button (click)="logout()">
+        <i class="fas fa-chart-line"></i>
+        <span class="nav-item-text">Wyloguj</span>
+      </button>
+    </li>
+  </ul>
+</nav>
