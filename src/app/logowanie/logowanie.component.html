@@ -11,5 +11,9 @@
       <input type="password" id="password" name="password" [(ngModel)]="formData.password" required>
     </div>
     <button type="submit" [disabled]="form.invalid">Zaloguj</button>
+
+    <div *ngIf="hasError" class="error-message">
+      {{ errorMessage }}
+    </div>
   </form>
 </div>
